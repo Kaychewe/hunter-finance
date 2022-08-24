@@ -28,4 +28,15 @@ import yfinance as yf
 
 df_yahoo = yf.download('AAPL', start='2022-01-01', end='2022-08-23',progress=False)
 
-print(df_yahoo)
+"""
+# Quandle Module Testing 
+
+import quandle as qd 
+
+Quandl_Key = '{key}'
+quandle.apiconfig.api_key = Quandl_Key
+
+df_quandl = quandl.get(dataset='WIKI/AAPL',  start='2022-01-01', end='2022-08-23')
+print(df_quandl)
+
+"""
